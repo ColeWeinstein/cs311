@@ -4,6 +4,12 @@
     Adapted by Cole Weinstein. Original 040mainLinking.c file written by Josh Davis for Carleton College's CS311 - Computer Graphics
 */
 
+/* On macOS, compile with...
+    clang 050mainPainting.c 040pixel.o -lglfw -framework OpenGL -framework Cocoa -framework IOKit
+On Ubuntu, compile with...
+    cc 050mainPainting.c 040pixel.o -lglfw -lGL -lm -ldl
+*/
+
 #include <stdio.h>
 #include <math.h>
 #include <GLFW/glfw3.h>

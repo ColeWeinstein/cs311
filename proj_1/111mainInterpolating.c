@@ -1,13 +1,13 @@
 /*
-    110mainInterpolating.c
-    Test main file for 110triangle.c, demonstrating interpolation abilities.
+    111mainInterpolating.c
+    Test main file for 111triangle.c, demonstrating interpolation abilities.
     Written by Josh Davis for Carleton College's CS311 - Computer Graphics. Adapted by Cole Weinstein.
 */
 
 /* On macOS, compile with...
-    clang 110mainInterpolating.c 040pixel.o -lglfw -framework OpenGL -framework Cocoa -framework IOKit
+    clang 111mainInterpolating.c 040pixel.o -lglfw -framework OpenGL -framework Cocoa -framework IOKit
 On Ubuntu, compile with...
-    cc 110mainInterpolating.c 040pixel.o -lglfw -lGL -lm -ldl
+    cc 111mainInterpolating.c 040pixel.o -lglfw -lGL -lm -ldl
 */
 
 #include <stdio.h>
@@ -16,14 +16,14 @@ On Ubuntu, compile with...
 
 #include "080vector.c"
 #include "100matrix.c"
-#include "110triangle.c"
+#include "111triangle.c"
 
 double a[2] = {144.0, -156.0};
 double b[2] = {244.0, 244.0};
 double c[2] = {-226.0, -226.0};
-double rgb[3] = {1.0, 1.0, 0.0};
+double rgb[3] = {1.0, 1.0, 1.0};
 double alphaRGB[3] = {1.0, 0.0, 0.0};
-double betaRGB[3] = {0.0, 1.0, 0.0};
+double betaRGB[3] = {1.0, 1.0, 0.0};
 double gammaRGB[3] = {0.0, 0.0, 1.0};
 double angle = 0.0;
 
@@ -46,7 +46,7 @@ void handleTimeStep(double oldTime, double newTime) {
 }
 
 int main(void) {
-    if (pixInitialize(512, 512, "Interpolator >:)") != 0)
+    if (pixInitialize(512, 512, "Testing") != 0)
         return 1;
     pixSetTimeStepHandler(handleTimeStep);
     pixRun();

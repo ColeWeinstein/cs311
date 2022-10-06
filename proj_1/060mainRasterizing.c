@@ -5,6 +5,12 @@
     Adapted from Josh Davis's 040mainLinking.c.
 */
 
+/* On macOS, compile with...
+    clang 060mainRasterizing.c 040pixel.o -lglfw -framework OpenGL -framework Cocoa -framework IOKit
+On Ubuntu, compile with...
+    cc 060mainRasterizing.c 040pixel.o -lglfw -lGL -lm -ldl
+*/
+
 #include <stdio.h>
 #include <GLFW/glfw3.h>
 #include "040pixel.h"
