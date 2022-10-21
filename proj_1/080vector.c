@@ -1,6 +1,6 @@
 /*
     080vector.c
-    A simple program to modify vectors and teach basic vector arithmetic.
+    A simple program to modify vectors and perform basic vector arithmetic.
     Written by Josh Davis for Carleton College's CS311 - Computer Graphics.
     Completed by Cole Weinstein.
 */
