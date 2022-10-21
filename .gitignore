@@ -1,2 +1,5 @@
 .vscode
-.gitignore
+proj_1/070mainArrays.c
+proj_1/090mainMatrices2By2.c
+proj_1/120mainPointers.c
+proj_1/130mainStructs.c
