@@ -1,13 +1,13 @@
+# General exclusions.
 .vscode
-proj_1/a.out
-proj_1/070mainArrays.c
-proj_1/090mainMatrices2By2.c
-proj_1/120mainPointers.c
-proj_1/130mainStructs.c
-proj_1/160mainAbstracted.c
-proj_1/210mainFunctionPointers.c
-proj_1/241mainShadings.c
-proj_1/251main3D.c
-proj_1/291mainWorld.c
-proj_1/301mainTest.c
-proj_1/302mainTest.c
+u*.txt
+
+# Don't include output files from any subdirectory.
+*/a.out
+
+# Don't include the following files.
+proj_1/0[79]0*
+proj_1/1[236]0*
+proj_1/210*
+proj_1/2[459]1*
+proj_1/30[12]*
